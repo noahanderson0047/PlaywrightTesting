@@ -13,6 +13,7 @@ export class LoginPage{
     // init selectors using constructors
     constructor(page: Page){
         this.page = page
+        this.newmsg = page.locator('')
         this.usernameInput = page.locator('#user_login')
         this.passwordInput = page.locator('')
     }
