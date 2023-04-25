@@ -1,5 +1,5 @@
 import{expect, Locator, Page} from '@playwright/test'
-
+//Warning New Feature
 export class LoginPage{
     //define selectors
     readonly page: Page
@@ -7,6 +7,7 @@ export class LoginPage{
     readonly passwordInput: Locator
     readonly submitButton: Locator
     readonly errMsg: Locator
+    readonly newmsg: Locator
 
 
     // init selectors using constructors
