@@ -36,7 +36,7 @@ test.describe.parallel('Simple API testing', ()=>{
         expect(respBody.id).toBe(4700)
     })
 
-    test.only('PUT Request', async({request})=>{
+    test('PUT Request', async({request})=>{
         const response = await request.put(`${baseURL}/users/2`, {
             data: {
                 name:"new name",
