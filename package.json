@@ -11,12 +11,15 @@
     "tests:visual:firefox:update": "playwright test --project=Firefox --update-snapshot",
     "tests:visual:webkit:update": "playwright test --project=Webkit --update-snapshot",
     "tests:api": "playwright test --project=Chromium"
-    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.32.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "nodemailer": "^6.9.1"
   }
 }
