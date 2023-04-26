@@ -3,7 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "tests:visual:chrome": "playwright test --project=Chromium",
+    "tests:visual:firefox": "playwright test --project=Firefox",
+    "tests:visual:webkit": "playwright test --project=webkit",
+    "tests:visual:chrome:update": "playwright test --project=Chromium --update-snapshot",
+    "tests:visual:firefox:update": "playwright test --project=Firefox --update-snapshot",
+    "tests:visual:webkit:update": "playwright test --project=Webkit --update-snapshot",
+    "tests:api": "playwright test --project=Chromium"
+    
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
