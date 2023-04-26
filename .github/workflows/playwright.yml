@@ -9,7 +9,7 @@ env:
   MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
   DAILY_REPORT_FROM: ${{ secrets.DAILY_REPORT_FROM }}
   DAILY_REPORT_TO: ${{ secrets.DAILY_REPORT_TO }}
-  
+
 jobs:
   test:
     timeout-minutes: 60
@@ -31,4 +31,5 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
-    - run: node src/main.js
+    - name: Send Email
+      run: node src/main.js
