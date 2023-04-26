@@ -1,6 +1,6 @@
 import{expect, test} from '@playwright/test'
 
-test.describe.only("Tipps and tricks", ()=>{
+test.describe("Tipps and tricks", ()=>{
     test('test', async({page}, testInfo) =>{
         await page.goto('http://www.example.com')
         //console.log(testInfo);

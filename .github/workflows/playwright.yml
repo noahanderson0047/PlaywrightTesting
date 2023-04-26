@@ -32,5 +32,15 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
-    - name: Send Email
-      run: node src/main.js
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - run: npm ci
+
+      - run: node src/main.js
